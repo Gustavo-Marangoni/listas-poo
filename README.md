@@ -10,6 +10,8 @@
 | `lista-09-engenharia-em-acao` | Lista 09 (Engenharia de Software em Ação) | 20 questões (Módulos A–D): encapsulamento, `static`, interface `Pagamento` + polimorfismo e coleções |
 | `lista-10-estrutura-de-dados` | Lista 10 (List vs Set) | `ArrayList` vs `HashSet` no controle de acessos da TechCorp, com identidade por matrícula |
 | `lista-11-protocolo-de-resiliencia` | Lista 11 (Protocolo de Resiliência) | Tratamento de exceções (checked/unchecked, `try-catch-finally`, custom) + Desafio Extra (AES/CTF) |
+| `lista-12-operacao-big-data` | Lista 12 (Operação Big Data) | **Streams API** e **Lambdas**: `filter`, `mapToDouble`, `sum`, pipelines — sem `for`/`if` + Desafio Extra (AES/CTF) |
+| `lista-13-arquitetura-padroes` | Lista 13 (Arquitetura e Padrões) | Design Patterns: **Singleton** (lazy) e **Factory** com `IllegalArgumentException` |
 
 ## Como executar
 
@@ -55,6 +57,16 @@ java -cp out br.com.techcorp.main.MainTechCorp
 cd lista-11-protocolo-de-resiliencia
 javac -encoding UTF-8 -d out $(find src -name "*.java")
 java -cp out br.com.nexustech.main.Main   # Desafio Extra: br.com.fronteira.main.App
+
+# Lista 12
+cd lista-12-operacao-big-data
+javac -encoding UTF-8 -d out $(find src -name "*.java")
+java -cp out br.com.technexus.main.Main   # Desafio Extra: br.com.technexus.desafio.ForcaBruta
+
+# Lista 13
+cd lista-13-arquitetura-padroes
+javac -encoding UTF-8 -d out $(find src -name "*.java")
+java -cp out br.com.techinvoice.main.Main
 ```
 
 ## Resultado da Operação Enigma
