@@ -9,16 +9,20 @@ public class Sistema {
 
         // Criando o objeto (Construindo o Carro 1)
         Carro meuCarro = new Carro();
-        meuCarro.modelo = "Fusca";
-        meuCarro.cor = "Azul";
+        meuCarro.setModelo("Fusca");
+        meuCarro.setCor("Azul");
+        meuCarro.setVelocidade(-500); // Tentando hackear novamente
 
         // Chamando o método (Comportamento)
         meuCarro.buzinar();
+        System.out.println("Velocidade atual do " + meuCarro.getModelo() + ": " + meuCarro.getVelocidade() + " km/h");
 
         // Desafio Rápido: Carro 2, de outro modelo e cor
         Carro carro2 = new Carro();
-        carro2.modelo = "Gol";
-        carro2.cor = "Prata";
+        carro2.setModelo("Gol");
+        carro2.setCor("Prata");
+        carro2.setVelocidade(80);
         carro2.buzinar();
+        System.out.println("Velocidade atual do " + carro2.getModelo() + ": " + carro2.getVelocidade() + " km/h");
     }
 }
